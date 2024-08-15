@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Item = require('../models/Item'); // Assuming you have an Item model
+const Item = require('../models/Item'); // Import your model
 
 // Route to fetch items
 router.get('/', async (req, res) => {
@@ -37,3 +37,4 @@ router.delete('/:id', async (req, res) => {
 });
 
 module.exports = router;
+    
